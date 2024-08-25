@@ -1,6 +1,7 @@
 package org.example.Requsters;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 //abstract class which includes connecting and requesting
 
@@ -8,7 +9,7 @@ public abstract class RequesterObjectDB extends ConnectorDB {
 
     private String nameTable;
 
-    public RequesterObjectDB(String URL, String USERNAME, String PASSWORD, String nameTable){
+    public RequesterObjectDB(String URL, String USERNAME, String PASSWORD, String nameTable) throws SQLException {
         super(URL, USERNAME, PASSWORD);
         this.nameTable=nameTable;
     }

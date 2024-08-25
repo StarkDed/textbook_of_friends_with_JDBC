@@ -2,7 +2,6 @@ package org.example.Objects;
 
 import java.sql.Date;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 
 public class Friend extends Person {
     private String phone_number;
@@ -58,21 +57,20 @@ public class Friend extends Person {
     }
 
     public String toString(){
-        String phonenumber=this.phone_number==null ? "Неопределено" : this.phone_number;
-        String email=this.email==null ? "Неопределено" : this.email;
+        String phonenumber=this.phone_number==null ? "undefined" : this.phone_number;
+        String email=this.email==null ? "undefined" : this.email;
 
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
         String birthday;
-        // Преобразуем sql.Date в строку
         if(this.birthday!=null){
             birthday = formatter.format(this.birthday);
         }else
-            birthday="Неопределено";
+            birthday="undefined";
 
 
 
-        String description=this.description==null ? "Неопределено" : this.description;
+        String description=this.description==null ? "undefined" : this.description;
 
         return "id = "+getId()+
                ", name="+getName()+

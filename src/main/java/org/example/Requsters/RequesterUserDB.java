@@ -8,7 +8,7 @@ import java.sql.*;
 
 public class RequesterUserDB extends RequesterObjectDB {
 
-    public RequesterUserDB(String URL, String USERNAME, String PASSWORD, String nameTable){
+    public RequesterUserDB(String URL, String USERNAME, String PASSWORD, String nameTable) throws SQLException{
         super(URL, USERNAME, PASSWORD,nameTable);
     }
 

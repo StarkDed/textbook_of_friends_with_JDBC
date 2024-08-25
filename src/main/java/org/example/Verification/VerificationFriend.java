@@ -1,9 +1,7 @@
 package org.example.Verification;
 
 import org.example.Objects.Friend;
-import org.example.Objects.User;
 
-import java.sql.Date;
 import java.util.HashMap;
 
 //class which checks all type of object friend for validation

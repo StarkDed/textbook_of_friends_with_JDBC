@@ -8,7 +8,7 @@ import java.sql.*;
 //clas for request friend from db
 public class RequesterFriendDB extends RequesterObjectDB {
 
-    public RequesterFriendDB(String URL, String USERNAME, String PASSWORD, String nameTable){
+    public RequesterFriendDB(String URL, String USERNAME, String PASSWORD, String nameTable) throws SQLException{
         super(URL, USERNAME, PASSWORD,nameTable);
     }
 
