@@ -16,7 +16,7 @@ I used maven to download mysql:
   
 2.about Connetion  
 I used mysql workbench to create shema(you need to do the same)  
-after that you need put URL,NAME,PASSWORD after one line into file "InfoConnection.txt" to connect to your DB  
+after that you need to put URL,NAME,PASSWORD after one line into file "InfoConnection.txt" to connect to your DB  
   
 Programms menu  
   
